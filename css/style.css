@@ -1,0 +1,220 @@
+/* CSS reset */  /*Prefer to put height and width of elements in pixels. It is better and convenient*/
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 52px;
+}
+/* Navigation Bar */
+#navbar{
+    height: 86px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+#logo{
+    margin: 12px 16px;
+}
+#logo img{
+    /* filter: invert(100%); */
+    margin: 12px 16px;
+    height: 64px;
+    width: 82px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Amarante', cursive;
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0px 54px;
+    border-radius: 32px;
+    text-decoration: none;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 674px;
+}
+#home::before{
+    content: "";
+    background: url("../img/bg5.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    transform: rotate(180deg);
+}
+/* Utility classes */
+.primary{
+    font-size: 3.6rem;
+    padding: 16px;
+}
+.secondary{
+    font-size: 2.2rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+#home h1{
+    font-family: 'Amarante', cursive;
+    color: black;
+    text-align: center;
+    padding: 42px 48px;
+    margin: 24px 44px;
+}
+#home p{
+    font-family: 'Amarante', cursive;
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.btn{
+    color: white;
+    font-size: 1.4rem;
+    background-color: rgba(105, 44, 44, 0.94);
+    border-radius: 14px;
+    margin: 25px 37px;
+    padding: 12px 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    font-family: 'Amarante', cursive;
+}
+.btn:hover{
+    background-color: rgb(163, 95, 95);
+}
+#services{
+    margin: 24px 0px;
+    padding: 24px 0px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid white;
+    margin: 12px;
+    padding: 24px;
+    background-color: rgb(214, 204, 143);
+    border-radius: 12px;
+}
+#services .box img{
+    height: 120px;
+    width: 200px;
+    margin: auto;
+    display: block;
+
+}
+/* .services .prime{
+    margin: 32px 0px;
+    padding: 32px 0px;
+} */
+/* .services{
+    margin: 12px 0px;
+    padding: 12px 0px;
+} */
+.prime{
+    font-size: 3.2rem;
+    padding: 10px;
+    font-family: 'Amarante', cursive;
+}
+.secondary{
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'Amarante', cursive;
+}
+#services .box p{
+    font-family: 'Amarante', cursive;
+}
+/* clients section */
+#clients-section{
+    height: 359px;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#clients img{
+    height: 132px;
+    width: 180px;
+    border-radius: 12px;
+}
+.client-item{
+    padding: 32px 12px;
+    
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg2.webp');
+    height: 45%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-section{
+    position: relative;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+#contact-section::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/bg5.jpg');
+}
+#contact-section input,
+#contact-section textarea{
+    width: 100%;
+    padding: 0.5 rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+/* #contact-section form{
+    width: 40%;
+} */
+#contact-section label{
+    font-size: 1.3rem;
+    font-family: 'Amarante', cursive;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+
